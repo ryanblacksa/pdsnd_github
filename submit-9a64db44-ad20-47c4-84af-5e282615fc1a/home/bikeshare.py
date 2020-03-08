@@ -196,7 +196,7 @@ def display_data(df):
     start_loc = 0
     end_loc = 5
 
-    display_choice = input("Do you want to see the raw data?: ").lower()
+    display_choice = input("Do you want to see the raw data?: Enter yes or no ").lower()
 
     if display_choice== 'yes':
         while end_loc <= df.shape[0] - 1:
@@ -205,7 +205,7 @@ def display_data(df):
             start_loc += 5
             end_loc += 5
 
-            end_display = input("Do you wish to continue?: ").lower()
+            end_display = input("Do you wish to continue?: Enter yes or no ").lower()
             if end_display == 'no':
                 break
     
