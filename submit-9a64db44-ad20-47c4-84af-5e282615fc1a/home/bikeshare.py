@@ -182,7 +182,7 @@ def user_stats(df,city):
     else :
         print('\nSorry! No gender or birthdate data avaialble for Washington.')
         
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
     
 def display_data(df):
