@@ -105,7 +105,7 @@ def time_stats(df):
         str(df['start_hour'].mode()[0]))
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
@@ -131,7 +131,7 @@ def station_stats(df):
         df['routes'].mode()[0])
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
@@ -152,7 +152,7 @@ def trip_duration_stats(df):
         str(df['duration'].mean()))
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
@@ -184,7 +184,7 @@ def user_stats(df,city):
     else :
         print('\nSorry! No gender or birthdate data avaialble for Washington.')
         
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
     
 def display_data(df):
@@ -198,7 +198,7 @@ def display_data(df):
     start_loc = 0
     end_loc = 5
 
-    display_choice = input("Do you want to see the raw data?: ").lower()
+    display_choice = input("Do you want to see the raw data?: Enter yes or no ").lower()
 
     if display_choice== 'yes':
         while end_loc <= df.shape[0] - 1:
@@ -207,7 +207,7 @@ def display_data(df):
             start_loc += 5
             end_loc += 5
 
-            end_display = input("Do you wish to continue?: ").lower()
+            end_display = input("Do you wish to continue?: Enter yes or no ").lower()
             if end_display == 'no':
                 break
     
