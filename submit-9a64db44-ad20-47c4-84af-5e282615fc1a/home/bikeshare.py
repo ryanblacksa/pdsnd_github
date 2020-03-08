@@ -129,7 +129,7 @@ def station_stats(df):
         df['routes'].mode()[0])
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
