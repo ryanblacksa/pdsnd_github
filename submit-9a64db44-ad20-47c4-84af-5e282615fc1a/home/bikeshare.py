@@ -1,3 +1,5 @@
+## Udacity Nano degree | Bikeshare opython project | Ryan Black
+
 import time
 import pandas as pd
 import numpy as np
