@@ -103,7 +103,7 @@ def time_stats(df):
         str(df['start_hour'].mode()[0]))
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
